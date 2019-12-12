@@ -1,0 +1,36 @@
+<html>
+	<head>
+  		<link href="css/shCore.css" rel="stylesheet" type="text/css" />
+  		<link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+      <title>Setup AEON Environemnt</title>
+	</head>
+
+	<body>
+		<h1>Setup AEON Environment</h1>
+		
+    <h2>Install Docker:</h2>
+    <p>We have provided a docker image which has already setup all necessary environment for AEON. Please follow <a href="https://docs.docker.com/">docker</a> to install docker at first. </p>
+
+		<h2>Pull docker image:</h2>
+    <p>docker image pull huilu1983/peca:gold.</p>
+
+  	<h2>Download AEON source code:</h2>
+    <p>git clone https://github.com/samplise/c-plus-aeon.git</p>
+
+    <h2>Start container:</h2>
+    <p>docker run --rm -it -v /path-to-aeon-code:/aeon -w /aeon huilu1983/peca:gold bash</p>
+
+    <h2>Setup AEON programming environemnt:</h2>
+    <p>cd c-plus-aeon</p>
+    <p>mkdir builds</p>
+    <p>cd builds</p>
+    <p>cmake ..</p>
+    
+  	<script src="js/shCore.js"></script>
+  		<script src="js/shBrushCpp.js"></script>
+  		<script>
+    		SyntaxHighlighter.all()
+  		</script>
+	</body>
+</html>
+
